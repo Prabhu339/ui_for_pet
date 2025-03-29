@@ -1,0 +1,370 @@
+.App {
+  text-align: center;
+}
+
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0%;
+}
+li :hover{
+  background-color: rgba(247, 158, 69, 0.56);
+  color: rgb(255, 255, 255);
+  border-radius: 10px;
+  font-weight: bold;
+}
+li{
+  padding-left: 50px;
+}
+.ant{
+  width: 100%;
+  height: 400px;
+  background-image: url("");
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.ant img{
+  width: 100%;
+  height: 400px;
+}
+.flex{
+  display: flex;
+}
+.flex img{
+  width: 200px;
+  height: 160px;
+}
+
+ 
+ 
+.card {
+  margin-bottom: 20px;
+}
+.bat{
+  background-color: rgb(248, 247, 246);
+  
+
+}
+header{
+ position: sticky;
+ top:0 ;
+ z-index: 1;
+
+}
+.bat img{
+  background-color: rgb(248, 247, 246);
+  width: 250px;
+  height: 220px;
+  padding: 10px;
+
+}
+
+
+
+.cat li{
+  padding: 10px;
+}
+.cat{
+  background-color:rgb(246, 238, 238);
+}
+.bg{
+  background-color: #1a1c1f;
+  color: white;
+  border-bottom: 1px solid white;
+  padding: 30px;
+  list-style: none;
+}
+.bg li:hover{
+  color:orange ;
+  
+}
+.bg h5{
+color: orange;
+}
+.bg li{
+  padding: 5px;
+}
+
+.logo{
+  width: 90px;
+  margin: -12px;
+  padding-left: 20px;
+}
+.about{
+ 
+  background-image: url("./assets//cat-dog-are-sitting-together-pink-background.jpg");
+  width: 60%;
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 400px;
+}
+ .about h2{
+  padding-top: 180px;
+  padding-left: 50px;
+  font-weight: bold;
+  font-size:50px;
+  color: rgb(23, 22, 22);
+  
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+
+}
+.contact{
+  width: 100%;
+  height: 130px;
+  text-align: center;
+  padding-top: 40px;
+  color: #fff;
+  font-size: 50px;
+
+}
+.fb img{
+  width: 70px;
+}
+.fb{
+  margin-top: -30px;
+  padding: 0px;
+}
+@media (max-width: 1200px) {
+  body {
+    width: 33.3%;
+  }
+}
+@media (min-width: 1000px) {
+  body {
+width: 50%;
+}
+}
+@media (max-width: 600px) {
+
+}
+body{
+  width: 100%;
+}
+.groom{
+  background-image:url("./assets/pet4.jpg") ;
+  height: 360px;
+  background-repeat: no-repeat;
+  background-position:left;
+  background-size:contain;
+  background-color:black;
+color: #e8e4e4;
+}
+.grooming{
+  color: whitesmoke;
+  background-color:black;
+}
+.car{
+border-radius: 10px;
+padding: 30px;
+list-style: none;
+
+}
+.car:hover{
+  
+  
+ 
+  border: 1px solid rgb(239, 32, 9);
+  }
+.car li{
+  padding: 4px;
+}
+.car li::before{
+  background-image: url("./assets/paw.png");
+}
+.car li img{
+  width: 20px;
+  margin-right:2px ;
+}
+.bord{
+  border-bottom: 3px solid salmon;
+}
+.car button{
+ border-radius: 10px;
+}
+.shitzu img{
+margin-top: -110px;
+}
+.city{
+  background-color: white;
+  padding: 0px;
+  border-radius: 10px;
+  margin: 10px;
+  text-align: center;
+  justify-content: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 500;
+
+}
+.vil{
+  background-color: rgb(230, 239, 234);
+}
+.stay{
+  text-align: center;
+  font-size: 20px;
+}
+.stay h3{
+  color: #921a1a;
+  font-style:oblique;
+  animation-name:slideInDown;
+  animation-duration:2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-delay: 2s;
+}
+.stay h3:hover{
+  color: #270c92;
+ 
+  
+}
+.lod img{
+  height: 400px;
+}
+.a img{
+  width: 400px;
+  height: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.a button{
+  background-color: #270c92;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+}
+.a button:hover{
+  background-color: hsl(42, 89%, 48%);
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+}
+.b:hover{
+  background-color: hsl(42, 89%, 48%);
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+}
+.b {
+  background-color: #270c92;
+  color: white;
+  border-radius: 10px;
+  height: 40px;
+  width: 500px;
+  font-style: oblique;
+  font-weight: bold;
+  font-size: large;
+}
+.bolder{
+  font-weight: 900px;
+}
+
+  
+
+aside{
+  background-color:rgb(159, 159, 167);
+  color: white;
+  padding: 5px;
+ text-align: center;
+
+width: 250px;
+}
+body{
+  box-sizing: border-box;
+  margin: 0;
+}
+aside button{
+  background-color: hsl(240, 20%, 91%);
+  display:block;
+  border-radius: 20px;
+  padding: 8px;
+  margin-bottom:10px;
+  width: 100%;
+  
+ 
+}
+.service img{
+  width: 40%;
+  margin: 10px;
+  background-color: white;
+}
+.bord{
+  border:1px solid #faf8f8;
+  background-color: rgb(250, 244, 244);
+  text-shadow: #270c92;
+  border-radius: 5px;
+}
+.bord h2{
+  padding-bottom: 50px;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Spicy+Rice&display=swap');
+.poppins {
+  font-family: "Poppins", serif;
+  font-weight: bolder;
+  font-style: italic;
+}
+.pacific {
+  font-family: "Pacifico", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+.qs summary{padding: 15px;
+
+}
+.heart{
+  animation: heartBeat;
+  animation-duration: 2s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+.vil img{
+  height: 200px;
+  padding: 5px;
+  
+  
+}
+.vil:hover{
+  height: 235px;
+  
+  
+  
+  
+}
+.vil{
+  margin: px;
+}

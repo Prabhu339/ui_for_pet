@@ -1,0 +1,28 @@
+export const HydArea=[
+    { "name": "Banjara Hills" },
+    { "name": "Hitech City" },
+    { "name": "Gachibowli" },
+    { "name": "Jubilee Hills" },
+    { "name": "Madhapur" },
+    { "name": "Secunderabad" },
+    { "name": "Charminar" },
+    { "name": "Kondapur" },
+    { "name": "Begumpet" },
+    { "name": "Dilsukhnagar" },
+    { "name": "Ameerpet" },
+    { "name": "Kukatpally" },
+    { "name": "Mehdipatnam" },
+    { "name": "Abids" },
+    { "name": "Somajiguda" },
+    { "name": "Attapur" },
+    { "name": "Nagole" },
+    { "name": "LB Nagar" },
+    { "name": "Uppal" },
+    { "name": "Malakpet" },
+    { "name": "Himayatnagar" },
+    { "name": "Nallagandla" },
+    { "name": "Tarnaka" },
+    { "name": "Bowenpally" },
+    { "name": "Shamshabad" }
+  ]
+  
