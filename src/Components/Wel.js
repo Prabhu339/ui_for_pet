@@ -2,8 +2,8 @@ import React from 'react'
 import useCallApi from './CallApi'
 
 const Wel = () => {
-  const booking=useCallApi(`http://localhost:4000/book`)
-  const enquiries=useCallApi("http://localhost:4000/enquiries")
+  const booking=useCallApi(`https://petavenue-backend.onrender.com/book`)
+  const enquiries=useCallApi("https://petavenue-backend.onrender.com/enquiries")
   return (
     <div className='container p-5'>
       <h3>Welcome To Dashboard</h3>

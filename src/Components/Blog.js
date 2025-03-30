@@ -7,7 +7,7 @@ import axios from 'axios'
 const Blog = () => {
   const [ball,setball]=useState([])
   useEffect(()=>{
-    axios.get(`http://localhost:4000/blog`)
+    axios.get(`https://petavenue-backend.onrender.com/blog`)
     .then((res)=>setball(res.data))
     .catch((err)=>console.log(err))
   })

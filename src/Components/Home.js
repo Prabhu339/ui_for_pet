@@ -32,7 +32,7 @@ const Home = () => {
 
   const booking=(e)=>{
     e.preventDefault();
-    axios.post(`http://localhost:4000/Book`,{
+    axios.post(`https://petavenue-backend.onrender.com/Book`,{
       pet,name,email,phone,comment,city
     })
     .then((res)=>alert("Booking Successfull"))

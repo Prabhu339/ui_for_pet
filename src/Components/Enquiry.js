@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 const Enquiry = () => {
     const [can,setcan]=useState([])
     useEffect(()=>{
-        axios.get("http://localhost:4000/enquiries")
+        axios.get("https://petavenue-backend.onrender.com/enquiries")
         .then((res)=>setcan(res.data))
         .catch((err)=>console.log(err))
     })

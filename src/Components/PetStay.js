@@ -16,7 +16,7 @@ const PetStay = () => {
    const [requirements,setRequirements]=useState("")
    const lodge=(e)=>{
       e.preventDefault()
-      axios.post(`http://localhost:4000/stay`,{
+      axios.post(`https://petavenue-backend.onrender.com/stay`,{
          petname,startdate,endDate,mobile,requirements
       })
       .then((res)=>alert("booked"))

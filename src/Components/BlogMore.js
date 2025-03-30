@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom'
 const BlogMore = () => {
   const [one,setone]=useState([])
   useEffect(()=>{
-axios.get(`http://localhost:4000/blog`)
+axios.get(`https://petavenue-backend.onrender.com/blog`)
 .then((res)=>setone(res.data))
 .catch((err)=>console.log(err))
   })

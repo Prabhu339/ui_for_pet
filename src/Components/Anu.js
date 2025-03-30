@@ -6,7 +6,7 @@ const Anu = () => {
     const [app,setApp]=useState([])
     useEffect(()=>{
      
-        axios.get(`http://localhost:4000/blog`)
+        axios.get(`https://petavenue-backend.onrender.com/blog`)
         .then((res)=>setApp(res.data))
         .catch((err)=>console.log(err))
     })

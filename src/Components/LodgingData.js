@@ -5,7 +5,7 @@ const LodgingData = () => {
     const [lodge,setLodge]=useState([])
     useEffect(()=>{
        
-        axios.get(`http://localhost:4000/stay`)
+        axios.get(`/stay`)
         .then((res)=>{
             setLodge(res.data)
         })

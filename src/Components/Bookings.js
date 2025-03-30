@@ -4,7 +4,7 @@ import React, { useEffect, useState } from 'react'
 const Bookings = () => {
     const [order,setOrder]=useState([])
     useEffect(()=>{
-        axios.get(`http://localhost:4000/book`)
+        axios.get(`https://petavenue-backend.onrender.com/book`)
         .then((res)=>{
             setOrder(res.data)
         })

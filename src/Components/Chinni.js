@@ -8,7 +8,7 @@ const Chinni = () => {
     const {_id}=useParams();
     const [off,setOff]=useState([])
     useEffect(()=>{
-        axios.get(`http://localhost:4000/blog/${_id}`)
+        axios.get(`https://petavenue-backend.onrender.com/blog/${_id}`)
         .then((res)=>setOff(res.data))
         .catch((err)=>console.log(err))
     })

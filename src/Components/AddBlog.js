@@ -11,7 +11,7 @@ const AddBlog = () => {
     const AddData=(e)=>{
         
             e.preventDefault();
-            axios.post(`http://localhost:4000/blog`,{
+            axios.post(`https://petavenue-backend.onrender.com/blog`,{
                 title,content,image,category,description
             })
             .then((res)=>alert("Added"))

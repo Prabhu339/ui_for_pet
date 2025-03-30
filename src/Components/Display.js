@@ -19,7 +19,7 @@ const DisplayView=useMemo(()=>{
     return <Enquiry/>
   }
   else if(view==="blog"){
-    return <Blog/>
+    return <Blog/>    
   }
   else if(view==="booking"){
     return <Bookings  />
@@ -33,7 +33,7 @@ const DisplayView=useMemo(()=>{
 },[view])
 
 useEffect(()=>{
-  axios.get(`http://localhost:4000/login`,{
+  axios.get(`https://petavenue-backend.onrender.com/login`,{
     headers:{"x-token":token}}
   )
   .then((res)=>{
