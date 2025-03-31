@@ -12,23 +12,29 @@ import axios from 'axios'
 
 const Display = () => {
   const [token,setToken]=useContext(loginCheck)
-const [view,setView]=useState("")
+  const [view,setView]=useState("")
+
 const DisplayView=useMemo(()=>{
-  if(view===""){return <Wel/>}
-  else if(view==="enquiry"){
+ 
+  if(view===""){
+    return <Wel/>
+  }
+
+  if(view==="enquiry"){
     return <Enquiry/>
   }
-  else if(view==="blog"){
-    return <Blog/>    
+  if(view==="booking"){
+    return <Bookings/>
   }
-  else if(view==="booking"){
-    return <Bookings  />
-  }
-  else if(view==="lodging"){
-    return <LodgingData />
-  }
-  else if(view==="addblog"){
+  if(view==="addblogs"){
     return <AddBlog/>
+  }
+  if(view==="lodging"){
+    return <LodgingData/>
+  }
+
+  if(view==="blog"){
+    return <Blog/>    
   }
 },[view])
 
@@ -52,13 +58,14 @@ if(!token){
       <div className='row'>
         <div className='col-lg-3'>
           <aside>
+            <h1 onClick={()=>setView("")}>Dashboard</h1>
             <button onClick={()=>setView("enquiry")}>Quiries</button>
             <button onClick={()=>setView("blog")}>blog</button>
             <button onClick={()=>setView("booking")}>Bookings</button>
             <button onClick={()=>setView("lodging")}>LodgingData</button>
            
-            <button onClick={()=>setView("addblog")}>AddBlog</button>
-            
+            <button onClick={()=>setView("addblogs")}>AddBlog</button>
+            <button onClick={()=>setToken("")} className='text-light bg-danger' >Logout</button>
            
           </aside>
         </div>

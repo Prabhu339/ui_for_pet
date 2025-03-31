@@ -5,7 +5,7 @@ const LodgingData = () => {
     const [lodge,setLodge]=useState([])
     useEffect(()=>{
        
-        axios.get(`/stay`)
+        axios.get(`https://petavenue-backend.onrender.com/stay`)
         .then((res)=>{
             setLodge(res.data)
         })

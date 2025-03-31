@@ -17,21 +17,23 @@ const Bookings = () => {
          <div className='row'>
          {order.map((data,india)=>{
             return(
-                <div className="card col-md-4 p-3 m-2" key={india}>
+                <div className="card col-md-4 col-lg-12 col-xl-12 p-3 m-2" key={india}>
                    <div className='table table-bordered'>
                     <tr>
                       <th>name</th>
                       <th>email</th>
                       <th>phone</th>
-                      <th>date</th>
-                      <th>time</th>
+                      <th>description</th>
+                      
                       
                     </tr>
+                    
                     <tr>
-                    <td>chintu</td>
-                    <td>chintu@gmail.com</td>
-                    <td>1/1/2025</td>
-                    <td>2:00pm</td>
+                    <td>{data.name}</td>
+                    <td>{data.email}</td>
+                    <td>{data.phone}</td>
+                    <td>{data.comment}</td>
+                    
                     </tr>
                    </div>
                 </div>

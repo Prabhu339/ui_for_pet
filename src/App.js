@@ -14,7 +14,7 @@ export const loginCheck=createContext();
 function App() {
   const [token,setToken]=useState("")
   return (
-    <div>
+    <div className='container-fluid App'>
     <loginCheck.Provider value={[token,setToken]}>
     <Start/>
     <Navbar/>

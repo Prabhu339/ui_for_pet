@@ -1,11 +1,12 @@
 import axios from 'axios'
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { loginCheck } from '../App'
 
 const Login = () => {
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
-    const [token,setToken]=useState("")
+    const [token,setToken]=useContext(loginCheck)
     const navigate=useNavigate()
     const submit=(e)=>{
     e.preventDefault()
